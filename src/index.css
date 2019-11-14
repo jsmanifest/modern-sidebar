@@ -14,15 +14,38 @@ code {
 
 .sidebar {
   max-width: 240px;
+  height: 100vh;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.sidebar-item-text {
+.sidebar-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-item-content {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
-.sidebar-subitem-text {
-  font-size: 0.8rem;
+.sidebar-item-icon {
+  margin-right: 6px;
+}
+
+.sidebar-item-text {
+  width: 100%;
+}
+
+.sidebar-item-expand-arrow {
+  font-size: 1.2rem !important;
+}
+
+.sidebar-item-expand-arrow-expanded {
+  color: #09bb12;
+  font-weight: bold;
 }
